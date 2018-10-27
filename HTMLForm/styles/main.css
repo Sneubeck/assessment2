@@ -125,3 +125,39 @@ ul {
     margin: 0 auto;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    display: flex;
+    margin: 20px;
+}
+
+.input-group label {
+    flex: 1;
+    flex-grow: 1;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.input-group input,
+.input-group select,
+.input-group button {
+    flex: 2;
+    max-height: 3rem;
+    font-size: 1.25rem;
+    padding: 5px;
+}
+
+button {
+    max-width: 8rem;
+    margin: 0px auto;
+}
+
+input.invalid,
+select.invalid {
+    border: red;
+}
